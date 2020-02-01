@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form style="text-align: center;">
+	<h1>Sign in</h1>
+	<input type="" name="text" placeholder="Login" id='login'>
+	<br>
+	<input style="margin-top: 5px; " type="password" name="" placeholder="Password" id='password'>
+	<br>
+	<button style="margin-top: 6px;"id='sign'>Log in</button>
+	<button style="margin-top: 6px;">Forgot your password?</button>
+
+</form>
+
+<hr>
+
+
+<script>
+	//let a;
+	//a = "Hello";
+	//alert(a)
+	function say_login(){
+		var x1 = document.getElementById('login').value;
+		var x2 = document.getElementById('password').value;
+		var x3 = "LOGIN: " + x1 + " PASSWORD: "+ x2;
+		document.getElementById('result').innerHTML = x3;
+		alert(x3)
+	}
+	document.getElementById('sign').addEventListener('click', say_login);
+</script>
+
+
+</body>
+</html>
